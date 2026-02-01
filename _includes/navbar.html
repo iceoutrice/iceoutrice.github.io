@@ -1,0 +1,43 @@
+
+
+	<div class="nav">
+		<div class="nav-side">
+			<a href="{{ site.baseurl }}/"><div class="nav-item">
+				Home
+			</div></a>
+		</div>
+		<div class="nav-side">
+            {% for page in site.pages %}
+                {% if page.nav == true %}
+                    <a href="{{ site.baseurl }}{{page.url}}"><div class="nav-item">
+                        {{page.title}}
+                    </div></a>
+                {% endif %}
+            {% endfor %}
+		</div>
+	</div>
+
+	<div id="darken"></div>
+	<div class="nav-mobile">
+		<a href="/"><div class="home">
+			Home
+		</div></a>
+
+		<img id="hamburger" src="{{ site.baseurl }}/resources/media/hamburger.png" />
+		<img id="x-icon" src="{{ site.baseurl }}/resources/media/x-symbol.svg" />
+	</div>
+	<div id="sidebar"><div class="flex-col">
+        {% for page in site.pages %}
+            {% if page.nav == true %}
+                <a href="{{ site.baseurl }}{{ page.url }}"><div class="side-item">
+                    {{ page.title }}
+                </div></a>
+            {% endif %}
+        {% endfor %}
+	</div></div>
+
+
+
+<script src="{{ site.baseurl }}/resources/scripts/navbar.js">
+
+</script>
