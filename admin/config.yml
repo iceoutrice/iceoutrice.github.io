@@ -10,16 +10,25 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "tabs"
+    label: "Tabs"
+    folder: "_tabs"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
 
 # Use DecapBridge PKCE auth (required)
 backend:
   name: git-gateway
-  repo: danexistsmaybe/ice-out-northfield
+  repo: iceoutrice/iceoutrice.github.io
   branch: main
   auth_type: pkce
   base_url: https://auth.decapbridge.com
-  auth_endpoint: /sites/2677163b-b427-41f8-b975-ca830cf09d57/pkce
-  auth_token_endpoint: /sites/2677163b-b427-41f8-b975-ca830cf09d57/token
+  auth_endpoint: /sites/4a7a44aa-703b-4907-bfd2-e33dbfa01c71/pkce
+  auth_token_endpoint: /sites/4a7a44aa-703b-4907-bfd2-e33dbfa01c71/token
   gateway_url: https://gateway.decapbridge.com
 
   # See who did what (optional)
@@ -42,4 +51,4 @@ auth:
 logo_url: https://decapbridge.com/decapcms-with-bridge.svg
 
 # Add site links in Decap CMS (optional)
-site_url: https://danexistsmaybe.github.io
+site_url: https://iceoutrice.github.io
