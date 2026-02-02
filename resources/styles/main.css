@@ -73,6 +73,7 @@ a {
 		flex-direction: row;
 		justify-content: space-between;
 		padding: 0 8vw;
+        background-color: darkred;
 	}
 
 	.home {
@@ -84,6 +85,7 @@ a {
 		align-items: center;
 		justify-content: center;
 		text-align: center;
+        color: white;
 	}
 
 	#hamburger,#x-icon {
@@ -115,7 +117,7 @@ a {
 		left: 100vw;
 		top: 0;
 		padding-top: 10vh;
-		background-color: white;
+		background-image: linear-gradient(to bottom, darkred, rgb(80, 0, 0));
 		width: 60vw;
 		height:100vh;
 		z-index: 8;
@@ -125,6 +127,7 @@ a {
 		margin-bottom: 2vh;
 		margin-left: 5vw;
 		font-size: 2em;
+        color: white;
 	}
 
 
