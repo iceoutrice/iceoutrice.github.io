@@ -16,9 +16,11 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Title", name: "title", widget: "string", hint: "Tabs are main pages that are meant to show up on the navbar."}
       - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Navbar", name: "nav", widget: "boolean"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Layout", name: "layout", default: "default", widget: "hidden"}
 
 # Use DecapBridge PKCE auth (required)
 backend:
